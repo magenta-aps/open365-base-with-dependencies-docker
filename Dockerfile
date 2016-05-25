@@ -1,4 +1,4 @@
-FROM    docker-registry.eyeosbcn.com/open365-base
+FROM    open365-base
 
 ## Install open365-services
 COPY    package.json /root/

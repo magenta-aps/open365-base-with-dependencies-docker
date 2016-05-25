@@ -34,9 +34,9 @@ var timer = 0;
 var username = process.env['EYEOS_USER'] + '@' + process.env['EYEOS_DOMAIN'];
 var token = process.env['EYEOS_TOKEN'];
 
-timer = setTimeout(function() {
+/*timer = setTimeout(function() {
     doShutdown();
-}, 60000);
+}, 60000);*/
 
 var waitUtilDisconnect = function(data) {
 
@@ -49,7 +49,7 @@ var waitUtilDisconnect = function(data) {
     if (output.indexOf(clientReady) > -1) {
         // process client ready
         console.log('READY!');
-        sendReadyMessage();
+//        sendReadyMessage();
     }
 
     if (output.indexOf(clientConnected) > -1) {
